@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.logo{
+    text-align: center;
+    padding: 5px;
+}
+.imglogo{
+    border-radius: 10%;
+    width: 100px;
+}
+
+.menusuperior{
+    list-style: none;
+    text-align: left;
+}
+.menusuperior li {
+    display: inline-block;
+}
+.menusuperior li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Rock Salt', cursive;
+}
+
+h1{
+    text-align: center; 
+    padding: 5px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+h3{
+    text-align: center; 
+    padding: 5px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 15px;
+    font-weight: bold;
+}
+h3 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+h4{
+    text-align: center; 
+    font-family: 'Rock Salt', cursive;
+}
+
+body{background: rgb(17,17,17);
+    background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(41,37,37,1) 18%, rgba(24,14,14,1) 80%, rgba(51,51,51,1) 100%);
+    color:#ffffff;font-style: oblique;
+}
+
+main section{
+    margin-bottom: 20px;
+}
+
+.titulo{
+    grid-area: titulo;
+}
+
+/* INICIO */
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    grid-template-areas: 
+    "inicio__carrusel"
+    "linksversatiles"
+    ;
+}
+.inicio__carrusel{
+    width: 1000px;
+    grid-area: inicio__carrusel;
+}
+
+/* BIOGRAFIA */
+
+.biografia{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: 3;
+    grid-template-areas:
+    "titulo titulo" 
+    "biografia__historia biografia__img"
+    "linksversatiles linksversatiles"
+    ;
+}
+.biografia__historia{
+    grid-area: biografia__historia;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+.biografia__img{
+    grid-area: biografia__img;
+}
+
+/* GIRA */
+
+.gira{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 4;
+    grid-template-areas: 
+    "titulo"
+    "gira__fechas"
+    "gira__entradas"
+    "linksversatiles"
+    ;
+}
+.gira__fechas{
+    margin: 10px;
+    grid-area: gira__fechas;
+    width: 680px;
+}
+.gira__entradas{
+    grid-area: gira__entradas;
+    display: flex;
+    justify-content: center;
+}
+.gira__entradas a{
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive;
+    color: #ffffff;
+    border-style: solid;
+}
+
+
+/* DISCOGRAFIA */
+
+.discografia__discos{
+    margin: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+.discografia__discos ol li div img{
+    width: 300px;
+    height: 300px;
+    border: rgb(117, 102, 102) 2px double;
+}
+.contenedordiscos{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(7, auto);
+    gap: 1px;
+    grid-template-areas: 
+    "disco1 disco2"
+    "disco3 disco4"
+    "disco5 disco6"
+    "disco7 disco8"
+    "disco9 disco10"
+    "disco11 disco12"
+    "disco13 disco13"
+    ;
+}
+.disco1{
+    grid-area:disco1;
+}
+.disco2{
+    grid-area:disco2
+}
+.disco3{
+    grid-area:disco3
+}
+.disco4{
+    grid-area:disco4
+}
+.disco5{
+    grid-area:disco5
+}
+.disco6{
+    grid-area:disco6
+}
+.disco7{
+    grid-area:disco7
+}
+.disco8{
+    grid-area:disco8
+}
+.disco9{
+    grid-area:disco9
+}
+.disco10{
+    grid-area:disco10
+}
+.disco11{
+    grid-area:disco11
+}
+.disco12{
+    grid-area:disco12
+}
+.disco13{
+    grid-area:disco13
+}
+
+/* GALERIA */
+
+.galeria section div{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria section div img{
+    width: 250px;
+    height: 250px;
+    border: rgb(117, 102, 102) 2px double;
+    opacity: .6;
+}
+.galeria section div img:hover{
+    opacity: 1;
+    border: rgb(117, 102, 102) 2px solid;
+}
+
+/* FORMULARIO */
+
+.formulario{
+    border-style: solid;
+    border-color: rgb(17, 16, 16);
+    width: 500px;
+    background-color: rgb(24, 24, 24);
+    padding: 20px 20px;
+    margin: auto;
+    margin-bottom: 20px;  
+}
+form{
+    text-align: center;
+}
+form div{
+    margin-bottom: 10px;
+}
+form div textarea{
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+form div input{
+    width: 100%;
+    height: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.botonesdecontacto input{
+    width: 150px;
+    height: 20px;
+    display: inline-block;
+}
+
+.linksversatiles{
+    grid-area: linksversatiles;
+    display: flex;
+    justify-content: center;
+}
+.linksversatiles a{
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive;
+    color: #ffffff;
+    border-style: solid;
+}
+
+/* FOOTER */
+
+.rsinferior{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.rsinferior li{
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    .biografia{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "biografia__img"
+        "biografia__historia"
+        "linksversatiles"
+        ;
+    }
+}
