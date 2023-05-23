@@ -286,6 +286,16 @@ form div input{
 }
 
 @media screen and (max-width: 600px) {
+    .menusuperior li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .inicio__carrusel{
+        width: auto;
+        padding: 15px;
+    }
+
     .biografia{
         grid-template-columns: auto;
         grid-template-rows: repeat(3, auto);
@@ -295,4 +305,36 @@ form div input{
         "linksversatiles"
         ;
     }
+
+    .gira__fechas{
+        width: auto;
+        padding: 15px;
+    }
+
+    .contenedordiscos{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(13, auto);
+        gap: 1px;
+        grid-template-areas: 
+        "disco1" 
+        "disco2"
+        "disco3" 
+        "disco4"
+        "disco5" 
+        "disco6"
+        "disco7" 
+        "disco8"
+        "disco9" 
+        "disco10"
+        "disco11"
+        "disco12"
+        "disco13" 
+        ;
+    }
+
+    .formulario{
+        width: auto;
+    }
+
 }
