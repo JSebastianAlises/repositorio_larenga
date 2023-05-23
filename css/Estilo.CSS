@@ -109,6 +109,9 @@ main section{
 .biografia__img{
     grid-area: biografia__img;
 }
+.biografia__img img{
+    width: 600px;
+}
 
 /* GIRA */
 
@@ -298,12 +301,16 @@ form div input{
 
     .biografia{
         grid-template-columns: auto;
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-areas: 
+        "titulo"
         "biografia__img"
         "biografia__historia"
         "linksversatiles"
-        ;
+        ;  
+    }
+    .biografia__img img{
+        max-width: 100%;
     }
 
     .gira__fechas{
