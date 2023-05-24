@@ -91,7 +91,7 @@ main section{
 /* BIOGRAFIA */
 
 .biografia{
-    margin: 20px;
+    margin: 10px;
     display: grid;
     grid-template-columns: repeat(2,auto);
     grid-template-rows: 3;
@@ -227,6 +227,7 @@ main section{
     height: 250px;
     border: rgb(117, 102, 102) 2px double;
     opacity: .6;
+    margin: 7px;
 }
 .galeria section div img:hover{
     opacity: 1;
@@ -235,12 +236,15 @@ main section{
 
 /* FORMULARIO */
 
-.formulario{
+.contacto{
+    margin: 10px;
+}
+.contacto__formulario{
     border-style: solid;
     border-color: rgb(17, 16, 16);
     width: 500px;
     background-color: rgb(24, 24, 24);
-    padding: 20px 20px;
+    padding: 20px;
     margin: auto;
     margin-bottom: 20px;  
 }
@@ -263,6 +267,7 @@ form div input{
     width: 150px;
     height: auto;
     display: inline-block;
+    margin-bottom: 5px;
 }
 
 .linksversatiles{
@@ -289,11 +294,13 @@ form div input{
 }
 
 @media screen and (max-width: 600px) {
-    .menusuperior li {
+    .menusuperior{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
     }
-
+    
     .inicio__carrusel{
         width: auto;
         padding: 15px;
@@ -340,8 +347,15 @@ form div input{
         ;
     }
 
-    .formulario{
-        width: auto;
+    .galeria section div{
+        justify-content: center;
+    }
+    .galeria section div img{
+        margin: 5px;
+    }
+
+    .contacto__formulario{
+        width: 90%;
     }
 
 }
