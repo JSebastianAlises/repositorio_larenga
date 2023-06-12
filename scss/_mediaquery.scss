@@ -59,8 +59,10 @@
         }
     }
 
-    .contacto__formulario{
-        width: 90%;
+    .contacto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
 }
+

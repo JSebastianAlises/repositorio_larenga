@@ -125,12 +125,7 @@
         width: 250px;
         height: 250px;
         border: rgb(117, 102, 102) 2px double;
-        opacity: .6;
         margin: 7px;
-        &:hover{
-            opacity: 1;
-            border: rgb(117, 102, 102) 2px solid;
-        }
     }
 }
 
@@ -145,11 +140,13 @@
         background-color: rgb(24, 24, 24);
         padding: 20px;
         margin: auto;
-        margin-bottom: 20px;  
+        margin-bottom: 20px;
+        h4{
+            padding-bottom: 10px;
+        }  
         form{
             text-align: center;
             div{
-                margin-bottom: 10px;
                 textarea{
                     width: 100%;
                     font-family: $font2;

@@ -203,11 +203,7 @@ body {
     width: 250px;
     height: 250px;
     border: #756666 2px double;
-    opacity: .6;
     margin: 7px; }
-    .galeria section div img:hover {
-      opacity: 1;
-      border: #756666 2px solid; }
 
 /* FORMULARIO */
 .contacto {
@@ -220,17 +216,17 @@ body {
     padding: 20px;
     margin: auto;
     margin-bottom: 20px; }
+    .contacto .contacto__formulario h4 {
+      padding-bottom: 10px; }
     .contacto .contacto__formulario form {
       text-align: center; }
-      .contacto .contacto__formulario form div {
-        margin-bottom: 10px; }
-        .contacto .contacto__formulario form div textarea {
-          width: 100%;
-          font-family: "Ubuntu", sans-serif; }
-        .contacto .contacto__formulario form div input {
-          width: 100%;
-          height: 25px;
-          font-family: "Ubuntu", sans-serif; }
+      .contacto .contacto__formulario form div textarea {
+        width: 100%;
+        font-family: "Ubuntu", sans-serif; }
+      .contacto .contacto__formulario form div input {
+        width: 100%;
+        height: 25px;
+        font-family: "Ubuntu", sans-serif; }
       .contacto .contacto__formulario form .botonesdecontacto input {
         width: 150px;
         height: auto;
@@ -265,5 +261,7 @@ body {
     justify-content: center; }
     .galeria section div img {
       margin: 5px; }
-  .contacto__formulario {
-    width: 90%; } }
+  .contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; } }
