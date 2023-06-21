@@ -142,14 +142,13 @@ body {
 .noticias {
   grid-area: noticias; }
 
-.notititulo, .notititulo:focus {
+.notititulo {
   color: #ffffff;
   font-size: 13px;
   text-align: center;
   padding: 5px;
   font-family: "Rock Salt", cursive;
-  font-weight: bold;
-  background: rgba(77, 67, 67, 0.5); }
+  font-weight: bold; }
 
 /* DISCOGRAFIA */
 .discografia__discos {

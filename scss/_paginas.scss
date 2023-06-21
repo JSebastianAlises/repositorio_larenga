@@ -81,10 +81,6 @@
 .notititulo{
     color:$fontcolor;
     @include titulos(13px);
-    background: rgba(77, 67, 67, 0.5);
-    &:focus {
-        @extend .notititulo;
-    }
 }
 
 /* DISCOGRAFIA */
