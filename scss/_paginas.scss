@@ -48,16 +48,18 @@
     justify-content: center;
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: 4;
+    grid-template-rows: 5;
     grid-template-areas: 
     "titulo"
     "gira__fechas"
     "gira__entradas"
+    "noticias"
     "linksversatiles"
     ;
 }
 .gira__fechas{
-    margin: 10px;
+    margin: auto;
+    padding-bottom: 10px;
     grid-area: gira__fechas;
     width: 680px;
 }
@@ -68,8 +70,20 @@
     a{
         text-decoration: none;
         font-family: $title-font;
-        color: #ffffff;
+        color:$fontcolor;
         border-style: solid;
+    }
+}
+.noticias{
+    grid-area: noticias;
+}
+
+.notititulo{
+    color:$fontcolor;
+    @include titulos(13px);
+    background: rgba(77, 67, 67, 0.5);
+    &:focus {
+        @extend .notititulo;
     }
 }
 
